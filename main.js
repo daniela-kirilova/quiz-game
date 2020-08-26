@@ -20,11 +20,14 @@ answer.forEach((answer) => {
   answerP.innerHTML = answerBtns;
 });
 
+
 let correct = data[counter].correctAnswer;
 let score = 0;
 let message = document.getElementById("message");
 let scoreTag = document.getElementById("score");
 scoreTag.innerHTML = "Your points: 0";
+
+// find the correct answer 
 function compare(el) {
   let targetEl = el.target.innerHTML;
   if (targetEl === correct) {
@@ -34,7 +37,8 @@ function compare(el) {
     nextBtn();
   } else {
     el.target.style.color = "red";
-    message.innerHTML = "You have answered wrong. The correct answer is:  " + correct
+    message.innerHTML =
+      "You have answered wrong. The correct answer is:  " + correct;
   }
 }
 
@@ -57,5 +61,4 @@ function nextBtn() {
       });
     });
 }
-
 body.appendChild(card);
