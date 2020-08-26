@@ -7,41 +7,57 @@ let scoreTag = document.createElement("h2");
 scoreTag.innerHTML = "Your points: " + score;
 body.appendChild(scoreTag);
 
-// display   the question and answers
+//question
 const questionH = document.createElement("h2");
 card.appendChild(questionH);
 let quest = data[counter].questions;
 questionH.innerHTML = quest;
 
+// answers
 const answerP = document.createElement("div");
 answerP.className = "answerDiv";
 card.appendChild(answerP);
 
 let answerBtns = "";
+
 let answer = data[counter].answers;
+
 answer.forEach((answer) => {
-  answerBtns += `<button id='anwersBtn'>${answer}</button> `;
+  answerBtns += `<button class='anwersBtn'>${answer}</button>`;
 
-  answerP.innerHTML = answerBtns;
+  
 });
+answerP.innerHTML = answerBtns;
 
-//write a logic to find the correct answer, if the answer is corect add one point
- 
-  // let nextQues = document.getElementById("anwersBtn").addEventListener("click", function () {
+// console.log("answers: ", answer);
+let correct = data[counter].correctAnswer;
 
-  //   if (answer.includes(data[counter].correctAnswer)) {
-  //     score += 5;
-  //     answerP.style.color = "green";
-  //     nextBtn();
-  //     return 'That was the correct answer! Well Done!'
-  //   } else {
-  //     answerP.style.color = "red";
-  //     nextBtn();
-  //     return `You should have chosen ${correctAnswer}. `;
-      
-  //   }
-  // });
- 
+//find the value of answers when clicked
+
+let items = document.querySelectorAll("button");
+console.log(items)
+// // items.forEach(function (item) {
+// //   item.addEventListener("click",function (element) {
+// //     console.log(element.innerHTML);  
+// //   });
+// });
+// function getValue(event){
+// console.log(event.target)
+// }
+
+
+
+//find the correct answer, and add one point
+// if (answer.includes(correct)) {
+//   score += 5;
+//   correct.style.color = "green";
+//   return "That was the correct answer! Well Done!";
+//   nextBtn();
+// } else {
+//   correct.style.color = "red";
+//   return `You should have chosen ${correct}. `;
+//   nextBtn();
+// }
 
 // click on button to show next question
 function nextBtn() {
@@ -51,7 +67,9 @@ function nextBtn() {
       //next.removeAttribute("hidden");
 
       counter = counter + 1;
+
       questionH.innerHTML = data[counter].questions;
+
       let answerBtns = "";
       let answer = data[counter].answers;
       answer.forEach((answer) => {
@@ -60,5 +78,5 @@ function nextBtn() {
       });
     });
 }
-nextBtn()
+nextBtn();
 body.appendChild(card);
