@@ -23,29 +23,35 @@ let answerBtns = "";
 let answer = data[counter].answers;
 
 answer.forEach((answer) => {
-  answerBtns += `<button class='anwersBtn'>${answer}</button>`;
-
-  
+  answerBtns += `<button class="answersBtn" onclick= "test(${answer})">${answer}</button>`;
 });
 answerP.innerHTML = answerBtns;
 
 // console.log("answers: ", answer);
-let correct = data[counter].correctAnswer;
+
+function test(el) {
+  el.forEach((item) => {
+    console.log(item);
+  });
+}
+// let test =document.querySelectorAll('.answersBtn')
+// console.log(test)
+
+
+
+
 
 //find the value of answers when clicked
+// let correct = data[counter].correctAnswer;
 
-let items = document.querySelectorAll("button");
-console.log(items)
 // // items.forEach(function (item) {
 // //   item.addEventListener("click",function (element) {
-// //     console.log(element.innerHTML);  
+// //     console.log(element.innerHTML);
 // //   });
 // });
 // function getValue(event){
 // console.log(event.target)
 // }
-
-
 
 //find the correct answer, and add one point
 // if (answer.includes(correct)) {
