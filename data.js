@@ -81,7 +81,7 @@ const data = [
     questions: "True or false:  There are McDonald’s one every continent except one",
     answers: ["True", "False"],
     correctAnswer: "False",
-  },,
+  },
   {
     questions: "True or false: The capital of Libya is Benghazi ",
     answers: ["False", "True"],

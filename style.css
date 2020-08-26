@@ -9,3 +9,10 @@ body {
 button{
   font-size: 1.2em;
 }
+.hidden{
+  visibility: hidden;
+}
+.show{
+  visibility: inherit;
+  pointer-events: none;
+}
