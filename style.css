@@ -31,7 +31,7 @@ body {
   border-radius: 80px;
 }
 .questions {
-  font-family: courier, arial, helvetica;
+  
   display: flex;
   margin-top: 3.5em;
   font-size: 27pt;
