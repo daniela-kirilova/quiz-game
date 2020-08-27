@@ -20,12 +20,12 @@ body {
   margin-top: 8em;
   margin-right: 45em;
 }
-.answersBtn {
+.anwersBtn {
   background: transparent;
   background-color: rgb(20, 38, 77);
   color: white;
-
-  width: 8em;
+margin-left: 4em;
+  width: 20em;
   height: 3em;
   font-size: 16pt;
   border-radius: 80px;
@@ -34,7 +34,7 @@ body {
   
   display: flex;
   margin-top: 3.5em;
-  font-size: 27pt;
+  font-size: 25pt;
   color: rgb(20, 38, 77);
 }
 
@@ -82,4 +82,7 @@ body {
   margin-left: 10em;
   font-style: italic;
   font-size: 20pt;
+}
+.endMsg{
+  color: rgb(100, 18, 43);
 }

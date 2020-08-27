@@ -22,7 +22,7 @@ let answerBtns = "";
 
 let answer = data[counter].answers;
 answer.forEach((answer) => {
-  answerBtns += `<button class="answersBtn" onclick="compare(event)">${answer}</button>`;
+  answerBtns += `<button class="anwersBtn" onclick="compare(event)">${answer}</button>`;
   answerP.innerHTML = answerBtns;
 });
 

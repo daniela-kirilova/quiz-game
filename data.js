@@ -10,7 +10,7 @@ const data = [
     correctAnswer: "Grafitti",
   },
   {
-    questions: "True or false: You can sneeze in your sleep",
+    questions: "You can sneeze in your sleep",
     answers: ["True", "False"],
     correctAnswer: "False",
   },
@@ -57,56 +57,56 @@ const data = [
     correctAnswer: "Vitamin C",
   },
   {
-    questions: "True or false: A woman has walked on the Moon ",
+    questions: "A woman has walked on the Moon ",
 
     answers: ["True", "False"],
     correctAnswer: "False",
   },
   {
-    questions: "True or false: According to Scottish law, it is illegal to be drunk in charge of a cow ",
+    questions: "According to Scottish law, it is illegal to be drunk in charge of a cow ",
     answers: ["True", "False"],
     correctAnswer: "True",
   },
   {
-    questions: "True or false: Vietnamese is an official language in Canada ",
+    questions: "Vietnamese is an official language in Canada ",
     answers: ["False", "True"],
     correctAnswer: "False",
   },
   {
-    questions: "True or false: The can-opener was not invented until 45 years after the tin can ",
+    questions: "The can-opener was not invented until 45 years after the tin can ",
     answers: ["False", "True"],
     correctAnswer: "True",
   },
   {
-    questions: "True or false:  There are McDonald’s one every continent except one",
+    questions: "There are McDonald’s one every continent except one",
     answers: ["True", "False"],
     correctAnswer: "False",
   },
   {
-    questions: "True or false: The capital of Libya is Benghazi ",
+    questions: "The capital of Libya is Benghazi ",
     answers: ["False", "True"],
     correctAnswer: "False",
   },
   {
-    questions: "True or false: Goldfish only have a memory of three seconds ",
+    questions: "Goldfish only have a memory of three seconds ",
     answers: ["True", "False"],
     correctAnswer: "False",
   },
 
   {
-    questions: "True or false: Warsaw is the capital of Bulgaria ",
-    answers: ["True", "False"],
-    correctAnswer: "False",
-  },
-
-  {
-    questions: "True or false: Nicolas Cage and Michael Jackson both married the same woman",
+    questions: "Dushanbe is the capital of Tajikistan ",
     answers: ["True", "False"],
     correctAnswer: "True",
   },
 
   {
-    questions: "True or false: An octopus has more than one heart ",
+    questions: "Nicolas Cage and Michael Jackson both married the same woman",
+    answers: ["True", "False"],
+    correctAnswer: "True",
+  },
+
+  {
+    questions: "An octopus has more than one heart ",
     answers: ["False", "True"],
     correctAnswer: "True",
   },
