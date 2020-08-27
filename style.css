@@ -1,18 +1,85 @@
- 
 body {
-   font-size: 1.2em;
-  padding: 0;
-  margin: 0;
+  background-color: rgb(20, 38, 77);
+  background-image: url("/images/scroll-34696_1280.png");
+  background-repeat: no-repeat;
+  padding: 8em;
+  margin: 2em;
+}
 
-  background-color: rgb(201, 188, 188) ;
-}
-button{
-  font-size: 1.2em;
-}
-.hidden{
+.hidden {
   visibility: hidden;
 }
-.show{
+.show {
   visibility: inherit;
   pointer-events: none;
+}
+
+.answerDiv {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8em;
+  margin-right: 45em;
+}
+.answersBtn {
+  background: transparent;
+  background-color: rgb(20, 38, 77);
+  color: white;
+
+  width: 8em;
+  height: 3em;
+  font-size: 16pt;
+  border-radius: 80px;
+}
+.questions {
+  font-family: courier, arial, helvetica;
+  display: flex;
+  margin-top: 3.5em;
+  font-size: 27pt;
+  color: rgb(20, 38, 77);
+}
+
+#next {
+  font-size: 1.2em;
+  position: fixed;
+  margin-top: 27em;
+  margin-left: 20em;
+  height: 3.2em;
+  width: 10em;
+  border: none;
+  border-radius: 180px;
+  box-shadow: 0px 0px 36px rgb(20, 38, 77);
+  background-color: rgb(20, 38, 77);
+  color: white;
+  cursor: pointer;
+}
+
+.help {
+  font-size: 1.2em;
+  position: fixed;
+  margin-top: 3.5em;
+  margin-left: 15em;
+  padding: 0.5em;
+  color: rgb(100, 18, 43);
+  font-size: 15pt;
+  font-family: "Cookie", cursive;
+  font-style: italic;
+  background: transparent;
+  border: none;
+  border-radius: 180px;
+  box-shadow: 0px 0px 15px rgb(117, 123, 136);
+}
+#score {
+  display: flex;
+  justify-content: unset;
+  position: fixed;
+  font-size: 25pt;
+  color: rgb(100, 18, 43);
+}
+#message {
+  color: rgb(100, 18, 43);
+  position: fixed;
+  margin-top: 8em;
+  margin-left: 10em;
+  font-style: italic;
+  font-size: 20pt;
 }

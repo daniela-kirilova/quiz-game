@@ -15,10 +15,10 @@ const data = [
     correctAnswer: "False",
   },
   {
-    questions: "Who invented the word vomit?",
+    questions: "Who invented the word 'Hello'?",
 
-    answers: ["Albert Einstein", " William Shakespeare"],
-    correctAnswer: " William Shakespeare",
+    answers: ["Albert Einstein", " William Shakespeare", "Thomas Edison", "Dr. Seuss"],
+    correctAnswer: "Thomas Edison",
   },
   {
     questions: " What is Scooby Doo’s full name? ",

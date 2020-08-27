@@ -2,10 +2,12 @@ let counter = 0;
 let score = 0;
 const body = document.getElementsByTagName("body")[0];
 const card = document.createElement("div");
+card.className='container'
 body.appendChild(card);
 
 //questions
 const questionH = document.createElement("h2");
+questionH.className="questions"
 card.appendChild(questionH);
 let question = data[counter].questions;
 let correct = data[counter].correctAnswer;
@@ -25,7 +27,15 @@ answer.forEach((answer) => {
 });
 
 function nextBtn() {
+
   document.getElementById("next").addEventListener("click", function () {
+    helpButton.innerHTML="Click me for help, you will loose 3 points."
+    helpButton.className="help"
+    helpButton.addEventListener('click', function(){
+        helpButton.innerHTML=""
+      helpButton.innerHTML="The correct anwer is: " + correct
+      })
+            
     let correct = data[counter].correctAnswer;
 
     questionH.innerHTML = data[counter].questions;
@@ -41,7 +51,16 @@ function nextBtn() {
   });
   data[counter].correctAnswer;
 }
+//help
 
+let helpButton= document.createElement('button')
+helpButton.innerHTML= "Click me for help, you will loose 3 points."
+helpButton.className="help"
+card.appendChild(helpButton)
+helpButton.addEventListener('click', function(){
+  helpButton.innerHTML="The correct anwer is: " + correct
+  score -=3
+  })
 let message = document.getElementById("message");
 let scoreTag = document.getElementById("score");
 scoreTag.innerHTML = "Your points: 0";
@@ -57,6 +76,9 @@ function compare(el) {
    let endMsg= document.createElement("h1")
    endMsg.className= 'endMsg'
    card.appendChild(endMsg)
+   helpButton.addEventListener('click', function(){
+    helpButton.innerHTML="The correct anwer is: " + correct
+    })
     if (data.length - 1 === counter && score < 60) {
      endMsg.innerHTML= "You have " + score + " from 100 points! You can do better!"
      document;
@@ -73,5 +95,7 @@ function compare(el) {
     message.innerHTML = "Sorry your answer is wrong, try again! ";
     scoreTag.innerHTML = "Your points: " + (score -= 5);
   }
+ 
+    
 }
 nextBtn();
